@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/funciones.js"></script>
+    <title>Dashbord</title>
+
+</head>
+<body>
+<div class="contenedor">   
+<div class="tab">
+  <button class="tablinks active" onclick="openPanel(event, 'Agregar')">Agregar</button>
+  <button class="tablinks" onclick="openPanel(event, 'Listar')">Listar</button>
+  
+  
+</div>
+
+<div id="Agregar" class="tabcontent active">
+  <h3>Agregar</h3>
+  <form>
+      <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre de proyecto">
+      <input type="text" name="lenguaje" id="lenguaje" placeholder="Lenguaje utilizado">
+      <input type="number" name="precio" id="monto" placeholder="Monto facturado en dolares">
+      <input type="submit" value="Agregar proyecto" onclick="insertar(event)">
+  </form>
+</div>
+
+<div id="Listar" class="tabcontent">
+  <h3>Proyectos realizados</h3>
+  <table id='trabajos'>
+      <tr>
+          <th>Proyecto</th>
+          <th>Lenguaje</th>
+          <th>Monto facturado en dolares</th>
+      </tr>
+      <tr>
+          <td>Portafolio</td>
+          <td>Html,Css,Javascript</td>
+          <td>500 dolares</td>
+      </tr>
+  </table>
+</div>
+
+<div id="Listar" class="tabcontent">
+  <h3>Contactos</h3>
+  <table id='trabajos'>
+      <tr>
+          <th>Proyecto</th>
+          <th>Lenguaje</th>
+          <th>Monto facturado en dolares</th>
+      </tr>
+      <tr>
+          
+      </tr>
+  </table>
+</div>
+
+
+</div> 
+</body>
+</html>
