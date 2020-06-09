@@ -46,7 +46,7 @@ fetchJSONFile('../datos/db.json', function(data){
 function insertar(e){
   e.preventDefault()
   objetoTemporal={nombre:document.getElementById('nombre').value,lenguaje:document.getElementById('lenguaje').value,monto:document.getElementById('monto').value}
-  bd.push(objetoTemporal)
+  
   document.getElementById("trabajos").insertRow(-1).innerHTML = `<td>${objetoTemporal.nombre}</td><td>${objetoTemporal.lenguaje}</td><td>${objetoTemporal.monto} dolares</td>`
   document.getElementById("nombre").value=""
   document.getElementById("lenguaje").value=""
